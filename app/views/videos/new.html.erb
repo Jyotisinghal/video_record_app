@@ -1,0 +1,10 @@
+<h1>Record Video</h1>
+<button id="recordButton">Start Recording</button>
+<button id="stopButton" disabled>Stop Recording</button>
+<button id="saveButton" disabled>Save Recording and Transcript</button>
+<video id="recordedVideo" controls></video>
+<textarea id="transcript" placeholder="Transcript will appear here..."></textarea>
+<br>
+<button id="uploadButton" disabled>Upload to Cloud</button>
+
+<script src="<%= asset_path 'video_recorder.js' %>"></script>
