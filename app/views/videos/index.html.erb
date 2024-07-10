@@ -1,0 +1,10 @@
+<h3>All Videos</h3>
+<% @videos.each do |video| %>
+    <tr>
+      <td><%= video.title %></td>
+      <td><%= video.description %></td>
+      <td><video src="<%= url_for(video.file) %>" height="100" width="200" loop muted="muted" autoplay></video></td>
+      <td><%= link_to 'Edit Transcript', edit_transcript_path(video.transcript) %></td>
+    </tr>
+<% end %>
+
